@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  background: #0f0f0f;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+/* Left editor */
+.left {
+  width: 50%;
+  height: 100%;
+  background: #000;
+  border: solid #9299a4;
+  border-radius: 14px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Right AI output */
+.right {
+  width: 50%;
+  height: 100%;
+  border: solid #9299a4;
+  border-radius: 14px;
+  background: #1e1e1e;
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Editor area */
+.code-editor {
+  flex: 1;
+  overflow: auto;
+}
+
+/* Editor text */
+.editor-textarea,
+.editor-pre {
+  white-space: pre !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+  line-height: 1.6;
+  background: #0c0c0c;
+  color: white;
+  outline: none;
+}
+
+/* Language selector */
+.lang-select {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #1e1e1e;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+/* Review button */
+.review {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: #8ab4f8;
+  color: black;
+  padding: 12px 26px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
